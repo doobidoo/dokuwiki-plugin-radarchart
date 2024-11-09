@@ -1,4 +1,3 @@
-
 ====== radarchart Plugin ======
 
 ---- plugin ----
@@ -18,6 +17,9 @@ bugtracker : https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/issues
 sourcerepo : https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/
 donationurl: 
 
+screenshot_img : # URL to a screenshot of the plugin in action
+----
+
 ===== Installation =====
 
 1. Create a new folder named 'radarchart' in your DokuWiki's lib/plugins directory
@@ -27,22 +29,23 @@ donationurl:
 5. Look for the radarchart plugin in the list and enable it if necessary
 Search and install the plugin using the [[plugin:extension|Extension Manager]]. Refer to [[:Plugins]] on how to install plugins manually.
 
-## Key features of the plugin:
+===== Key features of the plugin: =====
 
-- Responsive design that works on all devices
-- Interactive tooltips showing values
-- Clean, modern appearance
-- Easy-to-use syntax
-- Automatic scaling of values
-- Support for multiple charts on one page
+  - Responsive design that works on all devices
+  - Interactive tooltips showing values
+  - Clean, modern appearance
+  - Easy-to-use syntax
+  - Automatic scaling of values
+  - Support for multiple charts on one page
 
 ===== Examples/Usage =====
 
-===== Syntax =====
+==== Syntax ====
 
 Use the following syntax in your wiki pages to create a radar chart:
 
 === Basic Example ===
+<code>
 <radar>
 Speed|85
 Accuracy|92
@@ -50,10 +53,10 @@ Power|78
 Control|95
 Endurance|88
 </radar>
-
+</code>
 Eeach line represents a data point with:
-- Label before the pipe symbol (|)
-- Value after the pipe symbol (between 0 and 100 recommended)
+  - Label before the pipe symbol (|)
+  - Value after the pipe symbol (between 0 and 100 recommended)
 
 === Advanced Sample with multiple overlays ===
 
@@ -71,12 +74,12 @@ Speed|85
 Accuracy|92
 ...
 </radar>
-</code>>
+</code>
 
 3. **Custom Dataset Colors**:
-<code>>
+<code>
 @dataset Player 1|rgba(255,0,0,0.2)|rgb(255,0,0)
-</code>>
+</code>
 Format: `@dataset Label|backgroundColor|borderColor`
 
 4. **Configuration Options**:
@@ -122,23 +125,25 @@ Endurance|79
 </code>
 
 ==== Features ====
-- Responsive design
-- Interactive tooltips
-- Customizable colors
-- Automatic scaling
-- Multiple datasets support
+  - Responsive design
+  - Interactive tooltips
+  - Customizable colors
+  - Automatic scaling
+  - Multiple datasets support
 
 ==== Requirements ====
-- DokuWiki
-- Modern web browser with JavaScript enabled
-- Internet connection (for loading Chart.js from CDN)
+  - DokuWiki
+  - Modern web browser with JavaScript enabled
+  - Internet connection (for loading Chart.js from CDN)
 
 ==== Files Structure ====
+<code>
 plugin/
 └── radarchart/
     ├── syntax.php
     ├── style.css
     └──plugin.info.txt
+</code>
 
 ===== Configuration and Settings =====
 
@@ -154,7 +159,7 @@ The source code of the plugin is available at GitHub: https://github.com/Heinric
 
 === ToDo/Wish List ===
 
-//[developers roadmap]//
+Maybe some additional features...
 
 ===== FAQ =====
 
