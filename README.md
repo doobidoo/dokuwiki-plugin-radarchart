@@ -74,7 +74,7 @@ GPL 2 (http://www.gnu.org/licenses/gpl-2.0.html)
 
 ## Author
 
-Your Name (your.email@example.com)
+Heinrich Krupp (heinrich.krupp@gmil.com)
 
 ## Support
 
