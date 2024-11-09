@@ -7,7 +7,7 @@ email  heinrich.krupp@gmail.com
 date   2024-11-09
 name    Radar Chart Plugin
 desc    Creates customizable radar charts with multiple datasets, color schemes, and extensive configuration options. Features include multiple color schemes (default, pastel, dark, neon), custom colors per dataset, configurable dimensions, scales, and styling, responsive design, dark mode support, and enhanced tooltips.
-url     https://www.dokuwiki.org/plugin:radarchart
+url     https://github.com/doobidoo/radarchart
 
 ## Installation Instructions
 1. Create a new folder named 'radarchart' in your DokuWiki's lib/plugins directory
