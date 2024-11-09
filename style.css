@@ -1,0 +1,31 @@
+/* style.css */
+.radar-chart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.radar-chart-container:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.radar-chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .radar-chart-container {
+        background: #2d3436;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    
+    .radar-chart-container:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+}
