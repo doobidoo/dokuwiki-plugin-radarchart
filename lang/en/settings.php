@@ -1,4 +1,3 @@
-; lang/en/settings.php
 <?php
 $lang['width']          = 'Default chart width (pixels)';
 $lang['height']         = 'Default chart height (pixels)';
