@@ -1,6 +1,5 @@
-; conf/metadata.php
-; Configuration metadata
 <?php
+// Configuration metadata
 $meta['width']          = array('numeric', '_min' => 100, '_max' => 1200);
 $meta['height']         = array('numeric', '_min' => 100, '_max' => 1200);
 $meta['colorScheme']    = array('multichoice', '_choices' => array('default', 'pastel', 'dark', 'neon'));
