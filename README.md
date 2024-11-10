@@ -48,6 +48,7 @@ Control|85
 Endurance|79
 </radar>
 ```
+Sample:![image](https://github.com/user-attachments/assets/019769c6-310a-4cd3-9886-e2adc1f78ed2)
 
 ## Configuration Options
 
@@ -74,7 +75,7 @@ GPL 2 (http://www.gnu.org/licenses/gpl-2.0.html)
 
 ## Author
 
-Your Name (your.email@example.com)
+Heinrich Krupp (heinrich.krupp@gmil.com)
 
 ## Support
 
