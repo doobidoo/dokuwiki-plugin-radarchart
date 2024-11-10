@@ -2,7 +2,6 @@
 
 ---- plugin ----
 description: A flexible DokuWiki plugin for creating radar charts with multiple datasets, custom styling, and extensive configuration options.
-
 author     : HeinrichKrupp 
 email      : heinrich.krupp@gmail.com 
 type       : syntax
