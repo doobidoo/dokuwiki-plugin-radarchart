@@ -1,3 +1,4 @@
+
 ====== radarchart Plugin ======
 
 ---- plugin ----
@@ -6,46 +7,60 @@ author     : HeinrichKrupp
 email      : heinrich.krupp@gmail.com 
 type       : 
 lastupdate : 2024-11-09
-compatible : Kaos
+compatible : 
 depends    : 
 conflicts  : 
 similar    : 
-tags       : Chart Radar Spider
+tags       : 
 
-downloadurl: https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/zipball/master
-bugtracker : https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/issues
-sourcerepo : https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/
-donationurl: https://paypal.me/HeinrichKrupp
+downloadurl: # eg. https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/zipball/master
+bugtracker : # eg. https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/issues
+sourcerepo : # eg. https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/
+donationurl: 
 
-screenshot_img : https://github.com/user-attachments/assets/019769c6-310a-4cd3-9886-e2adc1f78ed2
-----
+# DokuWiki Radar Chart Plugin
 
-===== Installation =====
+## Plugin Information
+base   radarchart
+author Heinrich Krupp
+email  heinrich.krupp@gmail.com
+date   2024-11-09
+name    Radar Chart Plugin
+desc    Creates customizable radar charts with multiple datasets, color schemes, and extensive configuration options. Features include multiple color schemes (default, pastel, dark, neon), custom colors per dataset, configurable dimensions, scales, and styling, responsive design, dark mode support, and enhanced tooltips.
+url     https://github.com/doobidoo/radarchart
 
+## Installation Instructions
 1. Create a new folder named 'radarchart' in your DokuWiki's lib/plugins directory
 2. Copy all the provided files into this directory
 3. Log into your DokuWiki installation as an administrator
 4. Go to the Configuration Settings page
 5. Look for the radarchart plugin in the list and enable it if necessary
-Search and install the plugin using the [[plugin:extension|Extension Manager]]. Refer to [[:Plugins]] on how to install plugins manually.
 
-===== Key features of the plugin: =====
+## Key features of the plugin:
 
-  - Responsive design that works on all devices
-  - Interactive tooltips showing values
-  - Clean, modern appearance
-  - Easy-to-use syntax
-  - Automatic scaling of values
-  - Support for multiple charts on one page
+- Responsive design that works on all devices
+- Interactive tooltips showing values
+- Clean, modern appearance
+- Easy-to-use syntax
+- Automatic scaling of values
+- Support for multiple charts on one page
 
-===== Examples/Usage =====
-
-==== Syntax ====
-
+## Usage
 Use the following syntax in your wiki pages to create a radar chart:
 
-=== Basic Example ===
-<code>
+<radar>
+Attribute1|85
+Attribute2|92
+Attribute3|78
+Attribute4|95
+Attribute5|88
+</radar>
+
+Each line represents a data point with:
+- Label before the pipe symbol (|)
+- Value after the pipe symbol (between 0 and 100 recommended)
+
+## Basic Example
 <radar>
 Speed|85
 Accuracy|92
@@ -53,13 +68,8 @@ Power|78
 Control|95
 Endurance|88
 </radar>
-</code>
-Eeach line represents a data point with:
-  - Label before the pipe symbol (|)
-  - Value after the pipe symbol (between 0 and 100 recommended)
 
-=== Advanced Sample with multiple overlays ===
-
+## Advanced Sample with multiple overlays
 1. **Multiple Color Schemes**:
    - Default: Professional blue-based scheme
    - Pastel: Soft, muted colors
@@ -67,19 +77,19 @@ Eeach line represents a data point with:
    - Neon: High contrast, vibrant colors
 
 2. **Configurable Chart Settings**:
-<code>
+```
 <radar width="600" height="600" colorScheme="pastel" minScale="0" maxScale="100" legendPosition="top" borderWidth="2" pointRadius="3">
 @dataset Player 1|rgba(255,0,0,0.2)|rgb(255,0,0)
 Speed|85
 Accuracy|92
 ...
 </radar>
-</code>
+```
 
 3. **Custom Dataset Colors**:
-<code>
+```
 @dataset Player 1|rgba(255,0,0,0.2)|rgb(255,0,0)
-</code>
+```
 Format: `@dataset Label|backgroundColor|borderColor`
 
 4. **Configuration Options**:
@@ -106,7 +116,7 @@ Format: `@dataset Label|backgroundColor|borderColor`
    - Protection against malformed input
 
 Example usage with all features:
-<code>
+```
 <radar width="600" height="600" colorScheme="pastel" minScale="0" maxScale="100" legendPosition="right" borderWidth="3" pointRadius="4">
 @dataset Player 1|rgba(255,100,100,0.2)|rgb(255,100,100)
 Speed|85
@@ -122,44 +132,114 @@ Power|92
 Control|85
 Endurance|79
 </radar>
-</code>
+```
 
-==== Features ====
-  - Responsive design
-  - Interactive tooltips
-  - Customizable colors
-  - Automatic scaling
-  - Multiple datasets support
+## Features
+- Responsive design
+- Interactive tooltips
+- Customizable colors
+- Automatic scaling
+- Multiple datasets support
 
-==== Requirements ====
-  - DokuWiki
-  - Modern web browser with JavaScript enabled
-  - Internet connection (for loading Chart.js from CDN)
+## Requirements
+- DokuWiki
+- Modern web browser with JavaScript enabled
+- Internet connection (for loading Chart.js from CDN)
 
-==== Files Structure ====
-<code>
+## Files Structure
 plugin/
 └── radarchart/
     ├── syntax.php
     ├── style.css
     └──plugin.info.txt
-</code>
+
+====== radarchart Plugin ======
+
+---- plugin ----
+description: 
+author     : HeinrichKrupp 
+email      : heinrich.krupp@gmail.com 
+type       : 
+lastupdate : 2024-11-09
+compatible : 
+depends    : 
+conflicts  : 
+similar    : 
+tags       : 
+
+downloadurl: # eg. https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/zipball/master
+bugtracker : # eg. https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/issues
+sourcerepo : # eg. https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/
+donationurl: 
+
+screenshot_img : # URL to a screenshot of the plugin in action
+----
+
+//:!: This template contains various hints on how to fill in data (formatted in italics). Be sure to remove the hints and unwanted sections (Eg. the Syntax/Example section for non-syntax plugins.//
+
+===== Installation =====
+
+//[First, last and only chance to warn users before installing (some has already done that before reading this)]//
+
+:!: **External requirements:** This plugin requires the following additional components that must be installed separately: 
+  * [[A banana]]
+  * [[Another banana]]
+
+Search and install the plugin using the [[plugin:extension|Extension Manager]]. Refer to [[:Plugins]] on how to install plugins manually.
+
+===== Examples/Usage =====
+
+//[Most people learn by example, so this goes first]//
+
+See the plugin in action [[www.demosite.com|here]]. The sample page shows all the styles available with the plugin.
+
+A simple box:
+
+  <box> the box contents </box>
+
+Some more complex boxes
+
+  <box 80% round orange|a title> the box contents</box>
+  <box 50% left blue>the box contents</box|a caption>
+  <box 60% round #f99 #fc9 #fcc #f60|title>the box contents></box|caption>
+
+//[Pictures showing the rendered result will help users to understand]//
+
+===== Syntax =====
+
+//[Complete syntax]//
+
+Basic syntax:
+<code>{{actionlink>action|title}}</code>
+  * **action** can be one of this:
+    * //edit//    --- edit/create/show
+    * //history// --- old revisions
 
 ===== Configuration and Settings =====
 
-not applicable
+//[also CSS style tips]//
 
 ===== Development =====
+
+//[downloadable blocks, development comments]//
 
 The source code of the plugin is available at GitHub: https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart.
 
 === Changelog ===
 
+//[preferable GitHub RSS feed or similar]//
+
 {{rss>https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/commits/master.atom date 8}}
+
+=== Known Bugs and Issues ===
+
+//[this section might not be needed in case of external bug manager, or use RSS feed]//
 
 === ToDo/Wish List ===
 
-Maybe some additional features...
+//[developers roadmap]//
 
 ===== FAQ =====
+
+//[discussions should ideally be deleted and turned into FAQ entries along the way]//
 
