@@ -131,7 +131,7 @@ Endurance|79
 
 ==== Files Structure ====
 <code>
-plugin/
+radarchart/
 ├── conf
 │   ├── default.php
 │   └── metadata.php
