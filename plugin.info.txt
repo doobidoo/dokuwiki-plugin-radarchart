@@ -1,4 +1,4 @@
-====== Radarchart ======
+====== Radarchart Plugin ======
 
 ---- plugin ----
 description: A flexible DokuWiki plugin for creating radar charts with multiple datasets, custom styling, and extensive configuration options.
@@ -132,11 +132,19 @@ Endurance|79
 ==== Files Structure ====
 <code>
 plugin/
-└── radarchart/
-    ├── syntax.php
-    ├── style.css
-    ├── plugin.info.txt
-    └── readme.md
+├── conf
+│   ├── default.php
+│   └── metadata.php
+├── helper.php
+├── lang
+│   └── en
+│       └── settings.php
+├── manager.dat
+├── plugin.info.txt
+├── radarchart_sample.png
+├── README.md
+├── style.css
+└── syntax.php
 </code>
 
 ===== Configuration and Settings =====
