@@ -48,7 +48,7 @@ Control|85
 Endurance|79
 </radar>
 ```
-Sample:![image](https://github.com/user-attachments/assets/019769c6-310a-4cd3-9886-e2adc1f78ed2)
+Sample:![radarchart](https://github.com/user-attachments/assets/bad32062-640a-4b2d-bd3a-56f5becf57ce)
 
 ## Configuration Options
 
