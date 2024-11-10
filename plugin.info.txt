@@ -15,7 +15,7 @@ tags       : Chart Radar Spider
 downloadurl: https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/zipball/master
 bugtracker : https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/issues
 sourcerepo : https://github.com/HeinrichKrupp/dokuwiki-plugin-radarchart/
-donationurl: 
+donationurl: https://paypal.me/HeinrichKrupp
 
 screenshot_img : https://github.com/user-attachments/assets/019769c6-310a-4cd3-9886-e2adc1f78ed2
 ----
