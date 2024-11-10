@@ -1,6 +1,5 @@
-; conf/default.php
-; Default configuration settings
 <?php
+// Default configuration settings
 $conf['width']          = 400;          // Default chart width
 $conf['height']         = 400;          // Default chart height
 $conf['colorScheme']    = 'default';    // Default color scheme
